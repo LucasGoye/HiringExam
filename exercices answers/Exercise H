@@ -1,0 +1,9 @@
+I would implement the business logic using store prodcedures and triggers.
+
+Pros:
+        - easy attributes constraint implementation (NOT NULL, UNIQUE, CHECKS...)
+
+Cons:
+        - Complexity
+        - lack of reuse outside database systems
+        - Testing and debugging

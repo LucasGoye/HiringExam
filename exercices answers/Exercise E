@@ -1,0 +1,3 @@
+- avoid use of "SELECT *". Use "SELECT j.firstName, j.lastName" instead.
+- create an index for workingArea column.
+- it seems that the id of a janitor is equals to his employee id and his person id. So you can skip the join with the employee table.

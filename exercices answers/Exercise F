@@ -1,0 +1,4 @@
+- If there isn´t many inserts and updates you can add an index in all foreign keys involved in the join and in columns that participates in the where and sort clause.
+- We can replace some joins with subqueries with where clause. This would reduce the amount of rows that needs to be joined.
+- Use inner join to avoid null values
+- If there isn´t many inserts and updates you can de-normalize the database to avoid joins.

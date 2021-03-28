@@ -1,0 +1,8 @@
+SELECT s.first_name, s.last_name FROM student s INNER JOIN person p ON (s.person_id = p.id) WHERE TIMESTAMPDIFF (YEAR, p.birthdate, CURDATE()) BETWEEN 19 and 21;
+
+To optimize the query I would create a calculated column with the age of each person:
+
+ALTER TABLE person
+ADD age INT AS TIMESTAMPDIFF (YEAR, birthdate, CURDATE());
+
+
